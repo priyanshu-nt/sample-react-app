@@ -116,14 +116,14 @@ const Orders: React.FC = () => {
         </div>
         
         <div className="filter-item">
-          <div className="date-filter">
+          <div className="date-filter" data-testid="date-filter">
             <label>Data zamówienia</label>
             <input type="date" className="date-input" />
           </div>
         </div>
         
         <div className="filter-item">
-          <div className="date-filter">
+          <div className="date-filter" data-testid="date-filter">
             <label>Data realizacji</label>
             <input type="date" className="date-input" />
           </div>
@@ -144,7 +144,7 @@ const Orders: React.FC = () => {
       </div>
       
       <div className="orders-table-container">
-        <table className="orders-table">
+        <table className="orders-table" data-testid="orders-table">
           <thead>
             <tr>
               <th>Status</th>
@@ -206,7 +206,7 @@ const Orders: React.FC = () => {
                   <tr className="details-row">
                     <td colSpan={11}>
                       <div className="order-details">
-                        <table className="details-table">
+                        <table className="details-table" data-testid="details-table">
                           <thead>
                             <tr>
                               <th>Lp.</th>

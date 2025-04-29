@@ -7,7 +7,7 @@ import OrderFilters from '../OrderFilters';
 
 // Create mock component instead of using the real date pickers
 jest.mock('@mui/x-date-pickers/DatePicker', () => ({
-  DatePicker: ({ label, onChange }) => (
+  DatePicker: ({ label, onChange }: { label: string; onChange: (value: string) => void }) => (
     <input
       data-testid={`mock-date-picker-${label?.toLowerCase().replace(/\s/g, '-')}`}
       aria-label={label}

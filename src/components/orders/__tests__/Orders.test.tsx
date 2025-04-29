@@ -9,7 +9,7 @@ import Orders from '../Orders';
 jest.mock('../OrderFilters', () => {
   return {
     __esModule: true,
-    default: ({ onFilterChange }: { onFilterChange: (filters: any) => void }) => (
+    default: ({ onFilterChange }: { onFilterChange: (filters: { status: string[]; dateFrom: Date | null; dateTo: Date | null; orderNumber: string }) => void }) => (
       <div data-testid="order-filters">
         <button 
           onClick={() => onFilterChange({ status: ['new'], dateFrom: null, dateTo: null, orderNumber: 'TEST-123' })}

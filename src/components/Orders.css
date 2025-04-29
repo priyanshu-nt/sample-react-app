@@ -1,0 +1,248 @@
+/* Orders Component Styles */
+.orders-container {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  padding: 20px;
+  color: #333;
+}
+
+.orders-title {
+  color: #6366f1;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Filters Row */
+.filters-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  margin-right: 10px;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  min-width: 120px;
+}
+
+.date-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-filter label {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.date-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+.filter-button-container {
+  margin-left: auto;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 16px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-icon {
+  margin-right: 5px;
+}
+
+/* Table Styles */
+.orders-table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: white;
+}
+
+.orders-table th {
+  background-color: #f8fafc;
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.orders-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sort-icon {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+/* Status Indicator */
+.status-indicator {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.file-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: #e5e7eb;
+  border-radius: 3px;
+}
+
+.potwierdzone .file-icon {
+  background-color: #6366f1;
+}
+
+.wys\u0142ane .file-icon {
+  background-color: #10b981;
+}
+
+/* Row Styles */
+.expanded-row {
+  background-color: #6366f1;
+  color: white;
+}
+
+.expanded-row .edit-button svg,
+.expanded-row .delete-button svg,
+.expanded-row .details-button svg {
+  fill: white;
+}
+
+.details-row {
+  background-color: #f8fafc;
+}
+
+/* Button Styles */
+.download-button {
+  padding: 6px 12px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.edit-button,
+.delete-button,
+.details-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button svg {
+  fill: #ef4444;
+}
+
+/* Order Details Section */
+.order-details {
+  padding: 15px;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.details-table th {
+  background-color: #eef2ff;
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.details-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.invoice-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.invoice-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 16px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-prev,
+.pagination-next,
+.pagination-page {
+  border: 1px solid #e5e7eb;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-page.active {
+  background-color: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
